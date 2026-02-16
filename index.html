@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Tết 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal nhập tên -->
+    <div class="modal" id="nameModal">
+        <div class="modal-content">
+            <h1 class="modal-title">Một chúc bất ngờ! 🎉</h1>
+            <p class="modal-text">Bạn tên gì?</p>
+            <p class="text">Ghi tên th mấy má đừng ghi họ tên</p>
+            <input 
+                type="text" 
+                id="nameInput" 
+                class="name-input" 
+                placeholder="Nhập tên của bạn..."
+                autocomplete="off"
+            >
+            <button class="modal-btn" onclick="submitName()">Vào ngay</button>
+        </div>
+    </div>
+
+    <div class="fireworks" id="fireworks"></div>
+    
+    <!-- Audio Player -->
+    <audio id="musicPlayer" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="container" id="mainPage" style="display: none;">
+        <div class="content">
+            <h1 class="title">Chúc Tết</h1>
+            <h2 class="subtitle">Tết Nguyên Đán 2026</h2>
+            <p class="greeting" id="greeting"></p>
+            <p class="year">2026</p>
+            
+            <div class="wishes" id="wishesContainer"></div>
+            
+            <button class="btn" onclick="celebrate()">Bắn Pháo Hoa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
